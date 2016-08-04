@@ -1,13 +1,10 @@
 package com.designPatterns.creational.factory;
 
-import com.desginPatterns.core.shapes.Color;
 import com.desginPatterns.core.shapes.Shape;
-import com.designPatterns.creational.factory.ColorFactory.ColorType;
 
-public class ShapeFactory extends AbstractFactory {
+public class ShapeFactory {
 	
-	@Override
-	public Shape getShape(String clazz) {
+	public static Shape getShape(String clazz) {
 		
 		Shape shapeSubClass = null;
 		
@@ -18,12 +15,6 @@ public class ShapeFactory extends AbstractFactory {
 		}
 		
 		return shapeSubClass;
-	}
-
-	@Override
-	public Color getColor(ColorType colorType) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

@@ -4,14 +4,12 @@ import com.desginPatterns.core.shapes.Blue;
 import com.desginPatterns.core.shapes.Color;
 import com.desginPatterns.core.shapes.Green;
 import com.desginPatterns.core.shapes.Red;
-import com.desginPatterns.core.shapes.Shape;
 
-public class ColorFactory extends AbstractFactory {
+public class ColorFactory {
 
 	public enum ColorType{RED, BLUE, GREEN};
 	
-	@Override
-	public Color getColor(ColorType colorType) {
+	public static Color getColor(ColorType colorType) {
 		Color color = null;
 		
 		switch (colorType) {
@@ -32,9 +30,4 @@ public class ColorFactory extends AbstractFactory {
 		return color;
 	}
 
-	@Override
-	public Shape getShape(String shape) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

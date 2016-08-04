@@ -1,7 +1,7 @@
 package com.desginPatterns.core.shapes;
 
-@FunctionalInterface
 public interface Color {
 
+	String getName();
 	void fill();
 }
